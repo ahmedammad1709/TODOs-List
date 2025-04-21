@@ -23,7 +23,13 @@ nav {
     width: 65px;
     margin-right: 15px;
 }
-  
+
+.date{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
 h2, h4 {
     font-weight: 700;
     color: #ffffff;
