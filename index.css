@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+  
+body {
+    background-color: #1e1e2f; /* 60% - dark background */
+    color: #f8f9fa;
+}
+  
+nav {
+    background-color: #181829;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    /* box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7); */
+    box-sizing: border-box;
+}
+  
+.logo {
+    width: 65px;
+    margin-right: 15px;
+}
+  
+h2, h4 {
+    font-weight: 700;
+    color: #ffffff;
+}
+  
+.glass {
+    background-color: #2e2e3e;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 10px rgba(13, 110, 253, 0.1); /* ✨ layered depth */
+}
+  
+label,
+.form-text {
+    color: #cccccc;
+}
+  
+input,
+textarea {
+    background-color: #1e1e2f;
+    border: 1px solid #444;
+    color: #fff;
+}
+  
+input:focus,
+textarea:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 5px #0d6efd;
+    background-color: #2e2e3e;
+    outline: none;
+    box-shadow: 0 0 8px #0d6efd88;
+}
+  
+.table {
+    background-color: transparent;
+    color: #fff;
+    border-radius: 10px;
+}
+
+  
+.table thead {
+    background-color: #1e1e2f;
+    color: #0d6efd;
+}
+  
+.table tbody tr:hover {
+    background-color: #3a3a4d;
+}
+  
+.custom-btn {
+    border-radius: 10px;
+    transition: 0.3s ease;
+    border: 1px solid #0d6efd;
+    color: #0d6efd;
+    background-color: transparent;
+}
+  
+.custom-btn:hover {
+    background-color: #0d6efd; /* 10% - highlight */
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 0 12px #0d6efd;
+}
+  
+.btn-danger {
+    background-color: #dc3545;
+    border: none;
+}
+  
+.btn-danger:hover {
+    box-shadow: 0 0 12px #dc3545;
+    transform: scale(1.05);
+}
+
+footer{
+    justify-content: center;
+    background-color: #181829;
+}
+footer p{
+    text-align: center;
+    margin-bottom: 0;
+    padding: 10px;
+}
+  
+  /* Row animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+
+@media (max-width: 768px) {
+    .glass {
+      padding: 1rem;
+    }
+}  
