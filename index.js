@@ -1,5 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+ let date = new Date();
+    let day = document.getElementById("day");
+    let date1 = document.getElementById("date1");
+
+    const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    day.innerHTML = days[date.getDay()]; // More user-friendly
+    date1.innerHTML = date.toLocaleDateString("en-GB");
+
+    
     const add = document.getElementById("add");
     add.addEventListener("click", update);
 
