@@ -28,4 +28,4 @@ A clean, responsive, and beginner-friendly **To-Do List Web App** built using **
 ---
 
 ## 📸 Screenshots
-(./page1.png)
+![App Preview](./page1.PNG)
